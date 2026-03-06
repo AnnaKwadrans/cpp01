@@ -2,12 +2,9 @@
 
 /*This function creates a zombie, names it, and returns it so you can use it outside
 of the function scope.*/
-Zombie* Zombie::newZombie( std::string name )
+Zombie* newZombie( std::string name )
 {
-    Zombie *new_zombie;
-
-    new Zombie;
-    *new_zombie._name = name;
-
+    Zombie *new_zombie = new Zombie(name);
     return (new_zombie);
 }
+

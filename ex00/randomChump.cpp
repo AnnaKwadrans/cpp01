@@ -1,6 +1,9 @@
 #include "Zombie.hpp"
 
-void    Zombie::randomChump( std::string name )
+/*This function creates a zombie, names it, and makes it announce itself.*/
+void    randomChump( std::string name )
 {
-    /*This function creates a zombie, names it, and makes it announce itself.*/
+    Zombie random = Zombie(name);
+    random.announce();
+    return ;
 }
