@@ -7,9 +7,12 @@ std::string     replace(std::string buffer, std::string s1, std::string s2)
         std::string     aux;
         int             first_occurence = 1;
 
+        if (s1.empty())
+                return (buffer);
         size_t     r_id = buffer.find(s1);
         if (r_id == std::string::npos)
                 return (buffer);
+
         while (r_id != std::string::npos)
         {
                 if (first_occurence)
